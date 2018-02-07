@@ -18,6 +18,7 @@ class Question{
     this.content = content
   }
   insert(){
+    const sql = `INSERT INTO questions (content) VALUES (?)`
     return new Promise(function(resolve){
       resolve("this does nothing");
     })
