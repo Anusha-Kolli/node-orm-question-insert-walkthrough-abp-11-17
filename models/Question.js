@@ -18,7 +18,10 @@ class Question{
     this.content = content
   }
   insert(){
-    
+    return new Promise(function(resolve){
+      resolve("this does nothing");
+    })
+
   }
 
 }
