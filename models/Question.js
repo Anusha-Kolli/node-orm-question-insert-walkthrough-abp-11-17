@@ -23,7 +23,7 @@ class Question{
       db.run(sql,[self.content],function(err,results){
         self.id=this.id;
       })
-      resolve("this does nothing");
+      resolve("self");
     })
 
   }
