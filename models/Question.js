@@ -22,8 +22,9 @@ class Question{
     return new Promise(function(resolve){
       db.run(sql,[self.content],function(err,results){
         self.id=this.id;
+          resolve(self);
       })
-      resolve(self);
+
     })
 
   }
